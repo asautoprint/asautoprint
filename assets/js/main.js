@@ -14,6 +14,13 @@
     }
   }
 
+window.scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('#header').addClass('header-fixed');
+    } else {
+       $('#header').removeClass('header-fixed');
+    }
+});
   /**
    * Easy event listener function
    */
@@ -48,3 +55,4 @@
   new PureCounter();
 
 })();
+
